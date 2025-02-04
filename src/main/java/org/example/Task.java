@@ -5,7 +5,7 @@ public class Task {
     private String priority;
     private boolean completed;
 
-    public Task(String taskName, String priority, boolean completed) {
+    public Task(String taskName, String priority) {
         this.taskName = taskName;
         this.priority = priority;
         this.completed = false;
