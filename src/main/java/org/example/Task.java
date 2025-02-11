@@ -11,6 +11,10 @@ public class Task {
         this.completed = false;
     }
 
+    public void markCompleted() {
+        this.completed = true;
+    }
+
     public String getTaskName() {
         return taskName;
     }
@@ -37,10 +41,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
-                "taskName='" + taskName + '\'' +
-                ", priority='" + priority + '\'' +
-                ", completed=" + completed +
-                '}';
+        return "Task: " + taskName + ", Priority: " + priority + ", Completed: " + completed;
     }
 }
